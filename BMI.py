@@ -2,13 +2,13 @@ from tkinter import Tk, Label, Button, Entry
 def func():
     bmi = round((float(e2.get()))*703/((float(e1.get()))**2),2)
     if bmi < 18.5:
-        msg= "Your bmi is {} (Underweight)".format(bmi)
+        msg= "Your BMI is {} (Underweight)".format(bmi)
     elif 18.5 <= bmi < 25:
-        msg= "Your bmi is {} (Normal)".format(bmi)
+        msg= "Your BMI is {} (Normal)".format(bmi)
     elif 25 <= bmi < 29.9:
-        msg= "Your bmi is {} (Overweight)".format(bmi)
+        msg= "Your BMI is {} (Overweight)".format(bmi)
     else:
-        msg= "Your bmi is {} (Obese)".format(bmi)
+        msg= "Your BMI is {} (Obese)".format(bmi)
     l3 = Label(r, text=msg)
     l3.grid()
 
