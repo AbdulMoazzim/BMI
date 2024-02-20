@@ -5,8 +5,10 @@ def func():
         msg= "Your bmi is {} (Underweight)".format(bmi)
     elif 18.5 <= bmi < 25:
         msg= "Your bmi is {} (Normal)".format(bmi)
-    else:
+    elif 25 <= bmi < 29.9:
         msg= "Your bmi is {} (Overweight)".format(bmi)
+    else:
+        msg= "Your bmi is {} (Obese)".format(bmi)
     l3 = Label(r, text=msg)
     l3.grid()
 
@@ -22,6 +24,6 @@ l2 = Label(r, text = 'Enter your weight(pounds):')
 l2.grid(row=1,column=0)
 e2 = Entry(r)
 e2.grid(row=1,column=1)
-b = Button(r, text='Find BMI', command=func)
+b = Button(r, text='Calculate BMI', command=func)
 b.grid()
 r.mainloop()
